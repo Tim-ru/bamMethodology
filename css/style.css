@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main {
+    filter: drop-shadow(0px 0px 0px black);
+    background: no-repeat center / contain url('../src/mainBg.png') ;
+    background-size: cover;
+    height: 700px;
+    color: #fff;
+    text-align: center;
+}
+
+.main__header {
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.main__button {
+    font-size: 14px;
+    color: #fff;
+    background: none;
+    border: none;
+    padding: 8px 18px ;
+}
+
+.main__button:last-child {
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.main__logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main__title {
+    
+    
+}
+
+.main__title-text {
+    font-size: 52px;
+    max-width: 600px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.main__subtitle {
+    
+}
+
+.main__subtitle-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    margin: 34px;
+}
+
+.main__intro-button {
+    font-size: 14px;
+    padding: 14px 22px;
+    border-radius: 24px;
+    border: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: rgb(255, 78, 80);
+    color: #fff;
+}
+
+.how-it-works__title, .partners__title, .activities__title  {
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin: 100px 0 34px;
+}
+
+.how-it-works__steps {
+    display: flex;
+    justify-content: center;
+    background: 300px;
+}
+
+.how-it-works__step {
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    color: #fff;
+}
+.how-it-works__step-number {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.shadow {
+    background-color:rgba(0, 0, 0, 0.245);
+    height: 100%;
+}
+
+.how-it-works__step:nth-child(1) {
+    background:no-repeat center / contain url(../src/step1Bg.png);
+}
+
+.how-it-works__step:nth-child(2) {
+    background:no-repeat center / contain url(../src/step2Bg.png);
+}
+
+.how-it-works__step:nth-child(3) {
+    background:no-repeat center / contain url(../src/step3Bg.png);
+}
+
+.partners__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0 40px;
+}
+
+.partners__item {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    margin: 0 60px;
+}
+
+.partners__item:nth-child(1) {
+    background:no-repeat center / contain url(../src/partner1.png);
+}
