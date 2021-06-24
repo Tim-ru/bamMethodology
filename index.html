@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -41,8 +42,8 @@
         <div class="how-it-works__title">How Dreamshare works?</div>
         <div class="how-it-works__steps">
             <div class="how-it-works__step">
-                <div class="shadow">
-                    <div class="how-it-works__step-number">1</div>
+                <div class="how-it-works__step-wrapper">
+                    <div class="how-it-works__step-number">Step 1</div>
                     <div class="how-it-works__step-title">
                         Sed leo enim, condimentum
                     </div>
@@ -52,8 +53,8 @@
                 </div>
             </div>
             <div class="how-it-works__step">
-                <div class="shadow">
-                    <div class="how-it-works__step-number">2</div>
+                <div class="how-it-works__step-wrapper">
+                    <div class="how-it-works__step-number">Step 2</div>
                     <div class="how-it-works__step-title">
                         Morbi velit risus
                     </div>
@@ -64,8 +65,8 @@
 
             </div>
             <div class="how-it-works__step">
-                <div class="shadow">
-                    <div class="how-it-works__step-number">3</div>
+                <div class="how-it-works__step-wrapper">
+                    <div class="how-it-works__step-number">Step 3</div>
                     <div class="how-it-works__step-title">
                         Sed leo enim, condimentum
                     </div>
@@ -81,37 +82,37 @@
         <div class="partners__title">Meet a partner for your best holiday</div>
         <div class="partners__items">
             <div class="partners__item">
-                <div class="partners__image-container">
-                    <div class="partners__image"></div>
+                <div class="partner1 partners__image-container">
+                    <img src="./src/partner1.png" class="partners__image">
                 </div>
-                <div class="partners__title">Bradley Hunter</div>
-                <div class="partners__subtitle">
-                    <span>
-                        Based in Chicago. I love playing tennis and loud music.
-                    </span>
-                </div>
+                <div class="partners__name">Bradley Hunter</div>
+                <div class="partners__subtitle">Based in Chicago. I love playing tennis and loud music.</div>
             </div>
             <div class="partners__item">
-                <div class="partners__image-container">
-                    <div class="partners__image"></div>
+                <div class="partner2 partners__image-container">
+                    <img src="./src/partner2.png" class="partners__image">
                 </div>
-                <div class="partners__title">Heather Walker</div>
+                <div class="partners__name">Heather Walker</div>
                 <div class="partners__subtitle">I'm a happy person that loves cats and climbing on mountains. </div>
             </div>
             <div class="partners__item">
-                <div class="partners__image-container">
-                    <div class="partners__image"></div>
+                <div class="partner3 partners__image-container">
+                    <img src="./src/partner3.png" class="partners__image">
                 </div>
-                <div class="partners__title">Lucas Marsha</div>
-                <div class="partners__subtitle">I get my inspiration from nature and objects around me. I have </div>
+                <div class="partners__name">Lucas Marsha</div>
+                <div class="partners__subtitle">
+                    I get my inspiration from nature and objects around me. I have a passion to colours, typography and
+                    skateboards.
+                </div>
             </div>
             <div class="partners__item">
-                <div class="partners__image-container">
-                    <div class="partners__image"></div>
+                <div class="partner4 partners__image-container">
+                    <img src="./src/partner4.png" class="partners__image">
                 </div>
-                <div class="partners__title">Bradley Hunter</div>
+                <div class="partners__name">Bradley Hunter</div>
                 <div class="partners__subtitle">Based in Chicago. I love playing tennis and loud music.</div>
             </div>
+        </div>
         </div>
         <button class="partners__button">See other partners</button>
     </section>
@@ -120,17 +121,31 @@
         <div class="activities__title">Discover holiday activity ideas</div>
         <div class="activities__collage">
             <div class="activities__row">
-                <div class="activities__card">Sport and Activity</div>
-                <div class="activities__card">Wellnes and Health</div>
-                <div class="activities__card">Extreme Sports and Expeditions</div>
+                <div class="activities__card card1">
+                    <span>Sport and Activity</span>
+                </div>
+                <div class="activities__card card2">
+                    <span>Wellnes and Health</span>
+                </div>
+                <div class="activities__card card3">
+                    <span>Extreme Sports and Expeditions</span>
+                </div>
             </div>
             <div class="activities__row">
-                <div class="activities__card">Games</div>
-                <div class="activities__card">Culture and Education</div>
+                <div class="activities__card card4">
+                    <span>Games</span>
+                </div>
+                <div class="activities__card card5">
+                    <span>Culture and Education</span>
+                </div>
             </div>
             <div class="activities__row">
-                <div class="activities__card">Relaxation</div>
-                <div class="activities__card">Travelling</div>
+                <div class="activities__card card6">
+                    <span>Relaxation</span>
+                </div>
+                <div class="activities__card card7">
+                    <span>Travelling</span>
+                </div>
             </div>
         </div>
     </section>
@@ -138,25 +153,33 @@
     <form action="" class="form">
         <div class="form__title">Discover holiday activity ideas</div>
         <div class="form__subtitle">Hi! What are your holiday interests?</div>
-        <input type="text" class="form__input" placeholder="Enter your interests">
-        <button class="form__button">Search pertners</button>
+        <div class="form_search-form">
+            <input type="text" class="form__input" placeholder="Enter your interests">
+            <button class="form__button">Search pertners</button>
+        </div>
     </form>
     <footer class="footer">
-        <div class="footer__logo">
-            <h3 class="footer__logo-text">Dreamshare</h3>
+        <hr class="footer__hr">
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <h3 class="footer__logo-text">Dreamshare</h3>
+            </div>
+            <ul class="footer__links">
+                <p class="footer__list-title">Company</p>
+                <li class="footer__links-item"><a href="">About</a></li>
+                <li class="footer__links-item"><a href="">Contacts</a></li>
+                <li class="footer__links-item"><a href="">Press</a></li>
+                <li class="footer__links-item"><a href="">Blog</a></li>
+            </ul>
+            <div class="footer__partners">
+                <h3 class="footer__partners">Partners</h3>
+            </div>
+            <div class="footer__icon">
+                <p class="footer__icon-text">Designed by</p> 
+                <img class="footer__icon-image" src="./src/designBy.png" alt="">
+            </div>
         </div>
-        <ul class="footer__links">
-            <li class="footer__links-item"><a href="">About</a></li>
-            <li class="footer__links-item"><a href="">Contacts</a></li>
-            <li class="footer__links-item"><a href="">Press</a></li>
-            <li class="footer__links-item"><a href="">Blog</a></li>
-        </ul>
-        <div class="footer__partners">
-            <h3 class="footer__partners">Partners</h3>
-        </div>
-        <div class="footer__icon">
-            <img class="footer__icon-image" src="" alt="">
-        </div>
+
     </footer>
 </body>
 
