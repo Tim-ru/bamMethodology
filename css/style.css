@@ -10,7 +10,7 @@ a,  a:visited {
 }
 
 section {
-    max-width: 940px;
+    max-width: 1440px;
     margin: 0 auto;
     text-align: center;
 }
@@ -27,11 +27,12 @@ section {
 .main__header {
     position: absolute;
     width: 100%;
-    height: 55px;
+    height: 62px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 24px 0;
+    padding: 0px 54px;
 }
 
 .main__button {
@@ -39,7 +40,8 @@ section {
     color: #fff;
     background: none;
     border: none;
-    padding: 8px 18px ;
+    padding: 7px 15px ;
+    font-weight: bold;
 }
 
 .main__button:last-child {
@@ -51,7 +53,13 @@ section {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    margin-top: 1px;
+}
+
+.main__logo-text {
+    padding: 4px 0 0 0;
+    font-size: 20px;
+    letter-spacing: 0.5px;
 }
 
 .main__intro {
@@ -60,38 +68,61 @@ section {
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-bottom: 10px;
+    word-spacing: 2px;
+    letter-spacing: -1px;
+    padding-bottom: 14px;
+}
+
+.main__title {
+    margin-bottom: 20px;
 }
 
 .main__title-text {
     font-size: 52px;
     max-width: 600px;
-    line-height: 60px;
+    line-height: 62px;
     text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.main__subtitle {
+    margin-bottom: 35px;
 }
 
 .main__subtitle-text {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 100;
-    margin: 34px;
+    letter-spacing: 0px;
 }
 
-.main__intro-button {
+.main__find-partner {
+    padding-bottom: 7px;
+}
+
+.main__find-button {
     font-size: 14px;
-    padding: 10px 22px;
+    padding: 11px 21px;
     border-radius: 24px;
     border: none;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
+    word-spacing: -1px;
     font-weight: bold;
     background-color: rgb(255, 78, 80);
     color: #fff;
 }
 
-.how-it-works__title, .partners__title, .activities__title, .form__title  {
+.how-it-works__title, .activities__title  {
     font-size: 22px;
     font-weight: bold;
     width: 100%;
-    margin: 100px 0 34px;
+    margin: 94px 0 34px;
+}
+
+.how-it-works {
+    max-width: 960px;
 }
 
 .how-it-works__steps {
@@ -101,6 +132,8 @@ section {
 }
 
 .how-it-works__step {
+    border-radius: 5px;
+    width: 302px;
     height: 400px;
     background-size: cover;
     color: #fff;
@@ -116,24 +149,24 @@ section {
     text-align: left;
     padding: 20px;
     background: rgba(0,0,0,0.3);
+    border-radius: 5px;
 }
 
 .how-it-works__step-number {
     text-align: left;
     text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 9px;
+    letter-spacing: 3.5px;
     background-color: rgb(255, 78, 80);
-    padding: 4px 20px;
-    border-radius: 20px;
-    font-weight: normal;
-    margin-bottom: 20px;
+    padding: 4px 10px;
+    border-radius: 40px;
+    margin-bottom: 15px;
 }
 
 .how-it-works__step-title {
-    margin-bottom: 20px;
-    font-weight: bold;
+    margin-bottom: 24px;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .how-it-works__step-subtitle {
@@ -158,27 +191,33 @@ section {
     background-size: cover;
 }
 
+.partners__title {
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin: 94px 0 0;
+}
+
 .partners__items {
     display: flex;
     justify-content: center;
-    margin: 35px 0 40px;
+    margin: 34px 0 36px;
 }
 
 .partners__item {
-    width: 226px;
+    width: 242px;
     background-size: cover;
-    padding: 5px;
 }
 
 .partners__image-container {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     position: relative;
 }
 
 .partners__image-container::after {
     position: absolute;
-    top: 82%;
-    left: 75%;
+    top: 84%;
+    left: 69%;
     transform: translate(-50%,-50%);
     content: '';
     width: 40px;
@@ -202,22 +241,23 @@ section {
 }
 
 .partners__name {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 }
 
 .partners__subtitle {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
     color: rgba(133, 133, 133);
+    max-width: 200px;
 }
 
 .partners__button {
     border: 2px solid rgb(255, 78, 80);
     border-radius: 30px;
-    padding: 7px 22px;
+    padding: 10px 29px;
     border-radius: 24px;
     font-weight: bold;
     color: rgb(255, 78, 80);
@@ -227,13 +267,15 @@ section {
     color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .activities__row {
     display: flex;
     justify-content: space-between;
     height: 310px;
-    width: 100%;
+    width: 940px;
     margin-bottom: 20px;
 }
 
@@ -298,24 +340,33 @@ section {
     margin-bottom: 100px;
 }
 
+.form__title {
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin: 76px 0 32px;
+}
+
 .form__subtitle {
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
 }
 
 .form__input {
     font-size: 14px;
-    padding: 8px 10px;
+    width: 240px;
+    height: 40px;
+    padding: 14px ;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .form__button {
     font-size: 14px;
-    padding: 10px 25px;
+    padding: 10px 14px;
     border-radius: 24px;
     border: none;
     letter-spacing: 1px;
@@ -330,34 +381,47 @@ section {
     width: 100vw;
     height: 4px;
     background-color: rgb(255, 78, 80);
-    margin-bottom: 40px;
+    margin-bottom:36px;
 }
-
 
 .footer__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.footer__logo {
+    margin-left: 160px;
 }
 
 .footer__logo-text {
     color: rgb(255, 78, 80);
     font-weight: bold;
-    font-size: 22px;
+    font-size:14px;
     text-transform: uppercase;
 }
 
 .footer__links {
     list-style: none;
+    margin-left: 120px;
+    padding-bottom: 10px ;
 }
 
 .footer__list-title {
     font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .footer__links-item {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
+}
+
+.footer__partners {
+    margin-left: 189px;
+}
+
+.footer__partners-text {
+    font-size: 14px;
 }
 
 .footer__icon {
@@ -366,8 +430,12 @@ section {
     font-size: 14px;
     font-weight: bold;
     color: rgb(204, 204, 204);
+    margin-right: 148px;
+    margin-left: 269px;
 }
 
 .footer__icon-text {
     margin-bottom: 10px;
+    font-size: 10px;
+    font-weight: bold;
 }
