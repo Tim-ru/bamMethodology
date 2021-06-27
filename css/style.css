@@ -22,6 +22,7 @@ section {
     height: 700px;
     color: #fff;
     text-align: center;
+    width: 100%;
 }
 
 .main__header {
@@ -378,7 +379,7 @@ section {
 .footer__hr {
     content: '';
     display: block;
-    width: 100vw;
+    width: 100%;
     height: 4px;
     background-color: rgb(255, 78, 80);
     margin-bottom:36px;
@@ -439,3 +440,197 @@ section {
     font-size: 10px;
     font-weight: bold;
 }
+
+@media screen and (min-width: 300px) and (max-width: 410px)  {
+    body {
+        width: 100%;
+    }
+    section {
+        max-width: 300px;
+    }
+
+    .main {
+        height: 540px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__header {
+        flex-direction: column-reverse;
+        margin: 20px 0 30px;
+        height: 300px;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    .main__logo {
+        margin-top: 110px;
+    }
+
+    .main__button {
+        margin-right: 8px;
+        margin-left: -8px;
+    }
+    
+    .main__intro {
+        display: block;
+    }
+
+    .main__title {
+        margin-bottom: 6px;
+    }
+    
+    .main__title-text {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .main__subtitle {
+        margin-bottom: 14px;
+    }
+
+    .main__subtitle-text {
+        font-size: 18px;
+        padding: 0 40px;
+    }
+
+    .main__find-button {
+        padding: 11px 49px
+    }
+
+    .how-it-works__title {
+        margin: 34px 0 14px;
+    }
+
+    .how-it-works__steps {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .how-it-works__step {
+        margin-bottom: 10px;
+        height: 240px;
+        width: 300px;
+        margin: 0 auto 10px;
+    }
+    
+    .how-it-works__step-wrapper {
+        height: 240px;
+    }
+
+    .partners__title {
+        margin: 34px 0 0;
+    }
+
+    .partners__items {
+        flex-direction: column;
+        
+        margin: 13px 0 0;
+    }
+
+    .partners__item {
+        text-align: center;
+        margin: 0 auto 27px;
+    }
+
+    .partners__subtitle {
+        margin: 0 auto;
+    }
+
+    .partners__button {
+        padding: 10px 72px;
+    }
+
+    .activities__title {
+        margin: 33px 0 11px;
+    }
+
+    .activities__row {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2px;
+    }
+
+    .activities__card {
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .form {
+        margin-bottom: 41px;
+    }
+
+    .form__title {
+        margin: 21px 0 10px;
+    }
+
+    .form__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .form__input {
+        width: 88%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .form__button {
+        width: 88%;
+        padding: 11px 14px;
+    }
+
+    .footer__hr {
+        margin-bottom: 15px;
+    }
+
+    .footer__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: top;
+        text-align: center;
+    }
+
+    .footer__logo {
+        margin: 0 0 12px;
+        letter-spacing: 2px;
+    }
+
+    .footer__logo-text {
+        margin-bottom: 1px;
+        padding: 0;
+    }
+
+    .footer__links {
+        margin: 0;
+        text-align: center;
+        padding-bottom: 12px;
+    }
+
+    .footer__list-title {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer__links-item {
+        display: inline-block;
+        font-size: 14px;
+        margin: 0px 1px;
+        font-weight: 100;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .footer__partners {
+        margin: 0 0 13px;
+    }
+
+    .footer__icon {
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer__icon-text {
+        margin-bottom: 7px;
+    }
+ }
